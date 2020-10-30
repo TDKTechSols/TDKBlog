@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon-generated/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon-generated/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon-generated/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon-generated/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon-generated/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon-generated/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon-generated/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon-generated/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon-generated/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-generated/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-generated/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-generated/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-generated/favicon-16x16.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Laravel Preparation | TDK</title>
+  <!-- Font Awesome Icons -->
+  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+    rel="stylesheet" type="text/css" />
+
+  <!-- Plugin CSS -->
+  <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" />
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="/css/creative.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/web/assets/mobirise-icons/mobirise-icons.css" />
+  <link rel="stylesheet" href="/assets/tether/tether.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="/assets/socicon/css/styles.css" />
+  <link rel="stylesheet" href="/assets/dropdown/css/style.css" />
+  <link rel="stylesheet" href="/assets/theme/css/style.css" />
+  <link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" type="text/css" />
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <div data-include="navigation"></div>
+
+  <div class="container mt-5">
+    <div class="row justify-content">
+      <div class="col-lg-12">
+        <h1 class="mb-5 text-left">Preparation</h2>
+          <p class="text-justify">
+            <b>1.1 Installation </b>
+          </p>
+          <p class="text-justify ml-3">
+            <b>1.1.1 PHP </b>
+          <ul>
+            <li>Windows:
+              <ul>
+                <li>Download and unzip the zip file for lastest version from: <a
+                    href="https://windows.php.net/download">https://windows.php.net/download</a></li>
+                <li>Rename $PHP_PATH$/php.ini-development file to php.ini</li>
+                <li>Add $PHP_PATH$ to PATH Environment variable</li>
+              </ul>
+            </li>
+            <li>MacOS:
+              <ul>
+                <li>Download and install for lastest version from: <a
+                    href="https://php-osx.liip.ch">https://php-osx.liip.ch</a> </br>
+                  <b>$ curl -s http://php-osx.liip.ch/install.sh | bash -s 7.3</b>
+                </li>
+                <li>Export PATH </br>
+                  <b>$ export PATH=/usr/local/php5/bin:$PATH</b>
+                </li>
+              </ul>
+            </li>
+            <li>To confirm PHP is installed on your machine: <b>php --version</b>
+            </li>
+          </ul>
+          </p>
+          <p class="text-justify ml-3">
+            <b>1.1.2 Visual Studio Code </b>
+          <ul>
+            <li>Download and install from: <a
+                href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a>
+            </li>
+            <li> PHP Server extension
+              <ul>
+                <li>Install PHP Server (brapifra) extension from:<br/><a
+                  href="https://marketplace.visualstudio.com/items?itemName=brapifra.phpserver">https://marketplace.visualstudio.com/items?itemName=brapifra.phpserver</a>
+                </li>
+                <li>Edit in settings.json:
+                  <ul>
+                    <li>"phpserver.phpPath": "$PHP_PATH$/php.exe" (for Windows) </li>
+                    <li>"phpserver.phpPath": "/usr/local/php5/bin/php" (for MacOS)</li>
+                    <li>"phpserver.port": 5050</li>
+                  </ul>
+                </li>
+                <li>test.php file: &lt?php phpinfo(INFO_MODULES); ?&gt </br>
+                  » Right-click .php file » PHP Server: Reload Server
+                </li>
+              </ul>
+            </li>      
+          </ul>
+          </p>
+          <p class="text-justify ml-3">
+            <b>1.1.3 Composer </b>
+          <ul>
+            <li>Windows: download and run Composer-Setup.exe from:<a href="https://getcomposer.org/doc/00-intro.md">https://getcomposer.org/doc/00-intro.md</a></li>
+            <li>MacOS: download and install for lastest version from:<a href="https://getcomposer.org">https://getcomposer.org</a></li>
+            <b>curl -s https://getcomposer.org/installer | php</b><br/>
+            <b>sudo mv composer.phar /usr/local/bin/composer</b>
+            <li>To confirm Composer is installed on your machine: <b>composer - -version</b></li>
+          </ul>
+          <p class="text-justify ml-3">
+            <b>1.1.4 Create project </b>
+          <ul>
+            <li><b>$ composer create-project laravel/laravel --prefer-dist shopping-online</b></li>
+            <li>- Browser: http://domain/public/index.php</li>
+          </ul>
+          </p>
+          <p class="text-justify">
+            <b>1.2 Database </b>
+          </p>
+          <p class="text-justify ml-3">
+            <b>1.2.1 ERD </b>
+          </p>
+          <div><img class="img-fluid ml-5" src="/img/blog/ERD.PNG"></img>
+          </div>
+          <p class="text-justify ml-3">
+            <b>1.2.2 Remote MySQL database </b>
+          <ul>
+            <li>Sign up account from RemoteMySQL: <a href="https://remotemysql.com">https://remotemysql.com</a>
+            </li>
+            <li>Menu Databases » Create New Database
+              <ul>
+                <li>server name: remotemysql.com</li>
+                <li>port: 3306</li>
+                <li>database: aaa</li>
+                <li>username: bbb</li>
+                <li>password: ccc</li>
+              </ul>
+            </li>
+            <li>Item Action » phpMyAdmin » login with username and password</li>
+          </ul>
+          </p>
+          <p class="text-justify ml-3">
+            <b>1.2.3 SQL Scripting </b>
+            <script src="https://gist.github.com/TDKTechSols/6254a945f5bbe205c5325eb050a83003.js"></script>
+          </p>
+          <p class="text-justify ml-3">
+            <b>1.2.4 Config database</b>
+          <ul class="mb-0">
+            <li>Update .env file</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/0b51985cce00653f6a5d399003794757.js"></script>
+          </p>
+          <p class="text-justify">
+            <b>1.3 Stylesheets</b>
+          <ul class="mb-0">
+            <li>Copy styles.css, menu.css, datatable.css files vào trong assets/css folder.
+            </li>
+          </ul>
+          </p>
+          
+          <p class="text-justify">
+            <b>1.4 Utils </b>
+          </p>
+          <p class="text-justify">
+            <b>1.4.1 MyUtil </b>
+          <ul class="mb-0">
+            <li>app/Utils/MyUtil.php file</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/ab64de709fc0c775654fe23812e7814a.js"></script>
+          </p>
+          <p class="text-justify ml-3">
+            <b>1.4.2 EmailUtil </b>
+          <ul class="mb-0">
+            <li>- Update .env file</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/40d2f97ab847ac3f20b702c79762d468.js"></script>
+          <ul class="mb-0">
+            <li>- app/Utils/MyEmail.php file</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/dadf8190dae919a311fd19bb689baa74.js"></script>
+          <ul class="mb-0">
+            <li>- app/Utils/EmailUtil.php file</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/ad3998803d5deca1b44316245eff04bd.js"></script>
+          <ul class="mb-0">
+            <li> - resources/views/emailtemplate.blade file</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/35b93de29fa2c58423868ad8048b9020.js"></script>
+          </p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div data-include="footer"></div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="/js/creative.min.js"></script>
+
+  <script src="/assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="/assets/popper/popper.min.js"></script>
+  <script src="/assets/tether/tether.min.js"></script>
+  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/smooth-scroll/smooth-scroll.js"></script>
+  <script src="/assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+  <script src="/assets/jarallax/jarallax.min.js"></script>
+  <script src="/assets/social-likes/social-likes.js"></script>
+  <script src="/assets/dropdown/js/script.min.js"></script>
+  <script src="/assets/theme/js/script.js"></script>
+  <script src="/include.js"></script>
+  
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/5ef22b679e5f694422912883/default";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>
