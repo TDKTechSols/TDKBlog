@@ -78,8 +78,9 @@
           </ul>
 
           </p>
-          <p class="text-justify">
-            <b>1.</b> Installing json-server
+          <p class="text-justify"><b>1. Localhost </b></p>
+          <p class="text-justify ml-3">
+            <b>1.1. </b> Installing json-server
           <ul style="margin-bottom: 0;">
             <li>json-server is a node module, and hence can be installed globally by typing the following at the command
               prompt:
@@ -91,8 +92,8 @@
               can be started from the command line from any folder on your computer.</li>
           </ul>
           </p>
-          <p class="text-justify">
-            <b>2.</b> Configuring the Server </br>
+          <p class="text-justify ml-3">
+            <b>1.2.</b> Configuring the Server </br>
           <ul style="margin-bottom: 0;">
             <li>At any convenient location on your computer, create a new folder named <b>json-server</b>, and move to
               this folder. </li>
@@ -107,9 +108,11 @@
               accessed by typing the following addresses into your <b>browser address bar</b>:
               <ul>
                 <li>http://localhost:3001/dishes</li>
-                <li>http://localhost:3001/promotions</li>
                 <li>http://localhost:3001/leaders</li>
+                <li>http://localhost:3001/comments</li>
+                <li>http://localhost:3001/promotions</li>
                 <li>http://localhost:3001/feedback</li>
+                <li>http://localhost:3001/images/logo.png</li>
               </ul>
             </li>
             <li>Type these addresses into the browser address and see the JSON data being served up by the server. This
@@ -124,8 +127,8 @@
             <li>Shut down the server by typing <b>ctrl-C</b> in the terminal window.</li>
           </ul>
           </p>
-          <p class="text-justify">
-            <b>3.</b> Serving up the Images
+          <p class="text-justify ml-3">
+            <b>1.3.</b> Serving up the Images
           <ul style="margin-bottom: 0;">
             <li>Create a public folder in your json-server folder</li>
             <li>Download the images.zip file that we provide above, unzip it and move the images folder containing the
@@ -133,10 +136,30 @@
             <li>Restart the json-server as we did before. Now your server will serve up the images for our React app.
               You can view these images by typing the following into your browser address bar:
               <ul>
-                <li>http://localhost:3001/images/<image name>.png</li>
+                <li>http://localhost:3001/images/&lt;image_name&gt;.png</li>
               </ul>
             </li>
           </ul>
+          </p>
+          <p class="text-justify"><b>2. Heroku </b></p>
+          <p class="text-justify ml-3">
+            <ol>
+              <li>Download and unzip 'json-server-heroku' from: <a href="https://github.com/jesperorb/json-server-heroku" target="blank">https://github.com/jesperorb/json-server-heroku</a></li>
+              <li>Copy 'public' folder and 'db.json' file to 'json-server-heroku' folder</li>
+              <li>Create new app 'sonkk' on heroku.com</li>
+              <li>Deploy 'json-server-heroku' to 'sonkk'</li>
+              <script src="https://gist.github.com/TDKTechSols/97e83c63ab73379321c65c99fe7273a4.js"></script>
+              <li>Browser:
+                <ul>
+                  <li>http://sonkk.herokuapp.com/dishes</li>
+                  <li>http://sonkk.herokuapp.com/leaders</li>
+                  <li>http://sonkk.herokuapp.com/comments</li>
+                  <li>http://sonkk.herokuapp.com/promotions</li>
+                  <li>http://sonkk.herokuapp.com/feedback</li>
+                  <li>http://sonkk.herokuapp.com/images/logo.png</li>
+                </ul>
+              </li>
+            </ol>
           </p>
           <p class="text-center">(source: <a href="https://www.coursera.org/learn/react-native">Multiplatform
               Mobile App Development
