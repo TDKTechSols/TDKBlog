@@ -76,99 +76,68 @@
                   target="blank">db.json</a></i>
             </li>
           </ul>
+
           </p>
           <p class="text-justify">
-            <b>1.</b> Localhost
-            <p class="text-justify ml-3">
-              <b>1.1.</b> Installing json-server
-            <ul style="margin-bottom: 0;">
-              <li>json-server is a node module, and hence can be installed globally by typing the following at the command
-                prompt:
-                <ul>
-                  <li><i>npm install json-server -g</i></li>
-                </ul>
-              </li>
-              <li>If you are using OSX or Linux, use sudo at the front of the command. This will install json-server that
-                can be started from the command line from any folder on your computer.</li>
-            </ul>
-            </p>
-            <p class="text-justify ml-3">
-              <b>1.2.</b> Configuring the Server </br>
-            <ul style="margin-bottom: 0;">
-              <li>At any convenient location on your computer, create a new folder named <b>json-server</b>, and move to
-                this folder. </li>
-              <li>Download the db.json file provided above to this folder.</li>
-              <li>Move to this folder in your terminal window, and type the following at the command prompt to start the
-                server:
-                <ul>
-                  <li>json-server --watch db.json --delay 2000 --port 3001 --host 0.0.0.0</li>
-                </ul>
-              </li>
-              <li>This should start up a server at port number 3001 on your machine. The data from this server can be
-                accessed by typing the following addresses into your <b>browser address bar</b>:
-                <ul>
-                  <li>http://localhost:3001/dishes</li>
-                  <li>http://localhost:3001/leaders</li>
-                  <li>http://localhost:3001/comments</li>
-                  <li>http://localhost:3001/promotions</li>
-                  <li>http://localhost:3001/feedback</li>
-                </ul>
-              </li>
-              <li>Type these addresses into the browser address and see the JSON data being served up by the server. This
-                data is obtained from the db.json file</li>
-              <li>The json-server also provides a static web server. Any resources that you put in a folder named
-                <b>public</b> in the <b>json-server</b> folder above, will be served by the server at the following
-                address:
-                <ul>
-                  <li> http://localhost:3001/</li>
-                </ul>
-              </li>
-              <li>Shut down the server by typing <b>ctrl-C</b> in the terminal window.</li>
-            </ul>
-            </p>
-            <p class="text-justify ml-3">
-              <b>1.3.</b> Serving up the Images
-            <ul style="margin-bottom: 0;">
-              <li>Create a public folder in your json-server folder</li>
-              <li>Download the images.zip file that we provide above, unzip it and move the images folder containing the
-                images to the public folder.</li>
-              <li>Restart the json-server as we did before. Now your server will serve up the images for our React app.
-                You can view these images by typing the following into your browser address bar:
-                <ul>
-                  <li>http://localhost:3001/images/&lt;image_name&gt;.png</li>
-                </ul>
-              </li>
-            </ul>
-            </p>
-          </p>
-          <p class="text-justify">
-            <b>2.</b> Heroku
-            <p class="text-justify ml-3">
-              <b>2.1.</b> Download and unzip 'json-server-heroku' from:<a href="https://github.com/jesperorb/json-server-heroku" target="blank">https://github.com/jesperorb/json-server-heroku</a> 
-            </p>
-            <p class="text-justify ml-3">
-              <b>2.2.</b> Copy 'public' folder and 'db.json' file to 'json-server-heroku' folder
-            </p>
-            <p class="text-justify ml-3">
-              <b>2.3.</b> Create new app 'sonkk' on heroku.com
-            </p>
-            <p class="text-justify ml-3">
-              <b>2.4.</b> Deploy 'json-server-heroku' to 'sonkk':
-            </p>
-            <script src="https://gist.github.com/TDKTechSols/97e83c63ab73379321c65c99fe7273a4.js"></script>
-            <p class="text-justify ml-3">
-              <b>2.5.</b> Browser:
+            <b>1.</b> Installing json-server
+          <ul style="margin-bottom: 0;">
+            <li>json-server is a node module, and hence can be installed globally by typing the following at the command
+              prompt:
               <ul>
-                <li>http://sonkk.herokuapp.com/dishes</li>
-                <li>http://sonkk.herokuapp.com/leaders</li>
-                <li>http://sonkk.herokuapp.com/comments</li>
-                <li>http://sonkk.herokuapp.com/promotions</li>
-                <li>http://sonkk.herokuapp.com/feedback</li>
-                <li>http://sonkk.herokuapp.com/images/&lt;image_name&gt;.png</li>
+                <li><i>npm install json-server -g</i></li>
               </ul>
-            </p>
+            </li>
+            <li>If you are using OSX or Linux, use sudo at the front of the command. This will install json-server that
+              can be started from the command line from any folder on your computer.</li>
+          </ul>
           </p>
-          
+          <p class="text-justify">
+            <b>2.</b> Configuring the Server </br>
+          <ul style="margin-bottom: 0;">
+            <li>At any convenient location on your computer, create a new folder named <b>json-server</b>, and move to
+              this folder. </li>
+            <li>Download the db.json file provided above to this folder.</li>
+            <li>Move to this folder in your terminal window, and type the following at the command prompt to start the
+              server:
+              <ul>
+                <li>json-server --watch db.json --delay 2000 --port 3001 --host 0.0.0.0</li>
+              </ul>
+            </li>
+            <li>This should start up a server at port number 3001 on your machine. The data from this server can be
+              accessed by typing the following addresses into your <b>browser address bar</b>:
+              <ul>
+                <li>http://localhost:3001/dishes</li>
+                <li>http://localhost:3001/promotions</li>
+                <li>http://localhost:3001/leaders</li>
+                <li>http://localhost:3001/feedback</li>
+              </ul>
+            </li>
+            <li>Type these addresses into the browser address and see the JSON data being served up by the server. This
+              data is obtained from the db.json file</li>
+            <li>The json-server also provides a static web server. Any resources that you put in a folder named
+              <b>public</b> in the <b>json-server</b> folder above, will be served by the server at the following
+              address:
+              <ul>
+                <li> http://localhost:3001/</li>
+              </ul>
+            </li>
+            <li>Shut down the server by typing <b>ctrl-C</b> in the terminal window.</li>
+          </ul>
+          </p>
+          <p class="text-justify">
+            <b>3.</b> Serving up the Images
+          <ul style="margin-bottom: 0;">
+            <li>Create a public folder in your json-server folder</li>
+            <li>Download the images.zip file that we provide above, unzip it and move the images folder containing the
+              images to the public folder.</li>
+            <li>Restart the json-server as we did before. Now your server will serve up the images for our React app.
+              You can view these images by typing the following into your browser address bar:
+              <ul>
+                <li>http://localhost:3001/images/<image name>.png</li>
+              </ul>
+            </li>
+          </ul>
+          </p>
           <p class="text-center">(source: <a href="https://www.coursera.org/learn/react-native">Multiplatform
               Mobile App Development
               with React Native on Coursera</a>)</p>
