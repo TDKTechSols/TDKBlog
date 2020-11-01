@@ -56,65 +56,48 @@
   <div class="container mt-5">
     <div class="row justify-content">
       <div class="col-lg-12">
-        <h1 class="mb-5 text-left">React Native Components and Navigation Assignment</h1>
+        <h1 class="mb-5 text-left">React Native UI Elements and Redux</h1>
         <p class="text-justify"><strong>Instruction</strong></br>
-          In this assignment you will complete the remaining two components, About Us and Contact Us that you will add
-          to the application. You will use the Card layout that we created in the other pages for displaying the
-          information, and the FlatList to design the pages.
-        </p>
-        <p class="text-justify">
-          <strong>Assignment Resources</strong> </br>
-        <ul style="margin-bottom: 0;">
-          <li><i><a
-                href="https://drive.google.com/file/d/1sHBwlgzXX64JwRGPsgj9yRAysZeIOYZO/view?usp=sharing">Assignment1.txt</a></i>
-          </li>
-        </ul>
+          In this assignment you will explore React Native Modal and forms, and set up a form to submit a comment about a dish. You will also set up the appropriate actions, action creators and update the comments reducer for adding the comment to the list of comments for the dish.
         </p>
         <p class="text-justify">
           <strong>Assignment Overview</strong> </br>
-          In this assignment, you will update the React Native app to add the "Contact Us" and "About Us" views.
+          In this assignment, you will use a modal containing a form that enables you to add your comments about the dish. When the comment is submitted, then an action is dispatched to add the comment to the list of comments.
         </p>
         <p class="text-justify">
           <strong>Assignment Requirements</strong> </br>
-          <b>Task 1</b> </br>
-          In this task, you will add the Contact Us view to show the address of the restaurant as
-          shown in the picture below:
-        <ul>
-          <li>Add a new file named <i>ContactComponent.js</i> to the components folder</li>
-          <li>You should display the address as shown in the image. The address information is provided in the text file
-            <i>Assignment1.txt</i> above</li>
-          <li>You can use the Card layout that we used in the other pages to design this page</li>
-          <img class="img-fluid mt-3" src="/img/blog/assignment1-1.png">
+          This assignment consists of two tasks: </br>
+        <ul><b>Task 1</b>
+          <li>Implement a modal containing the "form" that enables the user to add comments on the dish in the Dishdetail Component.</li>
+          <li>The "form" should contain three fields: Rating, Author and Comment. Use a Rating React Native Elements (RNE) component for the Rating, and RNE Input component for the Author and Comment fields. The Rating should be configured with a range of 1 to 5 with a step size of 1. The form component values should be stored in the state of the Dishdetail Component.</li>
+          <li>Upon submitting the valid comment, the comment should join the other comments for the dish in the Dishdetail component. This would be implemented through the steps in Task 2 where you set up the Redux store to allow you to add the comment. The dispatch of the action should be done in the handleComment() function that handles the form submission in code.</li>
+          <li>Add an icon to the Card displaying the dish, which when clicked, will show the modal. The icon should use the Font Awesome pencil icon.</li>
+          <img class="img-fluid mt-3" src="/img/blog/assignment2-1.jpg">
         </ul>
         </p>
         </p>
         <p class="text-justify">
-          <b>Task 2</b></br>
-          In this task, you will add the About Us view to show the history and list of corporate leaders of the
-          restaurant:
-        <ul style="margin-bottom: 0;">
-          <li>Add a new file named <i>AboutComponent.js</i> to the <i>components</i> folder</li>
-          <li>You will use the Card layout to display the history. The History information is provided in the text file
-            <i>Assignment1.txt</i> above. This should be implemented in a functional component named History().</li>
-          <li>The corporate leadership information is obtained from the leaders.js file in the shared folder. The
-            information about the leaders is displayed using a FlatList with ListItem as shown below. This should be
-            rendered in the body of a Card with the title "Corporate Leadership".
-          </li>
-          <img class="img-fluid mt-3" src="/img/blog/assignment1-2.png">
+        <ul style="margin-bottom: 0;"><b>Task 2</b>
+          <li>Add an Action named ADD_COMMENT to the ActionTypes.js.</li>
+          <li>Add two action creators named postComment() and addComment(). The postComment() creator will receive the dishId, rating, author and comment as the four parameters.The date for the comment should be set automatically upon submission of the form. You can use the JavaScript date (see here for an example) method to set the date to ISO string. It will delay for 2 seconds and then dispatch addComment().</li>
+          <li>Update the comments reducer function to handle the new ADD_COMMENT action and add the comment to the list of comments. The handling of the action should also ensure that appropriate ID will be added to the comment.</li>
+          <img class="img-fluid mt-3" src="/img/blog/assignment2-2.jpg">
         </ul>
         </p>
-        <p class="text-justify">
-          <b>Task 3</b></br>
-          In this task, you will update the <i>MainComponent</i> class in the <i>MainComponent.js</i> file::
-        <ul style="margin-bottom: 0;">
-          <li>You need to include the <i>AboutComponent</i> as a Stack Navigator, and then include it within the
-            DrawerNavigator, just as we did with HomeComponent. This will enable navigation to the About Us view.</li>
-          <li>You need to include the <i>ContactComponent<i> as a Stack Navigator, and then include it within the
-                DrawerNavigator, just as we did with HomeComponent. This will enable navigation to the Contact Us view.
-          </li>
-          <img class="img-fluid mt-3" src="/img/blog/assignment1-3.png">
-        </ul>
-        </p>
+        <p class="text-justify"> <b>Review criteria</b> </br> Your submission will be graded based on the following criteria:
+          <ul style="margin-bottom: 0;"><b>Task 1</b>
+            <li>The modal containing the form is correctly added to the DIshdetail component</li>
+            <li>The form is correctly configured with the rating, author and comment fields.</li>
+            <li>An Icon is added to the RenderDish Card that will trigger the showing of the modal.</li>
+          </ul>
+          <ul style="margin-bottom: 0;"><b>Task 2</b>
+            <li>The ADD_COMMENT action is correctly added</li>
+            <li>The postComment() action creator is correctly added</li>
+            <li>The addComment() action creator is correctly added and will be dispatched by postComment() after a 2 sec delay</li>
+            <li>The comment reducer is updated to handle the ADD_COMMENT action</li>
+          </ul>
+          </p>
+
         <p class="text-center">(source: <a href="https://www.coursera.org/learn/react-native">Multiplatform
             Mobile App Development
             with React Native on Coursera</a>)</p>
