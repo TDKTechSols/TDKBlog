@@ -57,36 +57,32 @@
       <div class="col-lg-12">
         <h1 class="mb-5 text-left">Secure Store</h2>
           <p class="text-justify">
-            In this tutorial, you will configure your app to make use of secure store from Expo SDK to enable storing and retrieving data in the form of key-value pairs. At the end of this tutorial, you will be able to:
-          <ul style="margin-bottom: 0;">
+            In this tutorial, you will configure your app to make use of secure store from Expo SDK to enable storing
+            and retrieving data in the form of key-value pairs. At the end of this tutorial, you will be able to:
+          <ul class="mb-0">
             <li>Configure your app with secure store</li>
             <li>Store and retrieve data using key-value pairs</li>
           </ul>
           </p>
           <p class="text-justify">
-            Using Secure Store
-            <ul class="mb-0">
-              <li>Add a new file named LoginComponent.js in the components folder and add the following to it:</li>
-            </ul>
-            <script src="https://gist.github.com/TDKTechSols/4009fcc9a5fb6db4d1821f4bd3571f4d.js"></script>
-            <ul class="mb-0">
-              <li>Then, update MainComponent.js to incorporate the LoginComponent as follows:</li>
-            </ul>
-            <script src="https://gist.github.com/TDKTechSols/6a27f1b03bb01f272b77ebae1b7e7f87.js"></script>
-          </p>
-          <p class="text-justify">
-           Start json-server
-          <ul style="margin-bottom: 0;">
-            <li>json-server --watch db.json --delay 2000 --port 3001 --host 0.0.0.0
-            </li>
-            <li>Make sure that you are running <b><i>expo start</i></b> at the command prompt in a terminal or command
-              window in your
-              project folder.</li>
+            <b>1.</b> Install expo-secure-store library (tested on v9.0.1):
+          <ul class="mb-0">
+            <li><i>$ expo install expo-secure-store</i></li>
           </ul>
           </p>
-          <p class="text-center">(source: <a href="https://www.coursera.org/learn/react-native">Multiplatform
-              Mobile App Development
-              with React Native on Coursera</a>)</p>
+          <p class="text-justify">
+            <b>2.</b> Using Secure Store
+          <ul class="mb-0">
+            <li>Add a new file named LoginComponent.js in the components folder and add the following to it:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/4009fcc9a5fb6db4d1821f4bd3571f4d.js"></script>
+          <ul class="mb-0">
+            <li>Then, update MainComponent.js to incorporate the LoginComponent as follows:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/6a27f1b03bb01f272b77ebae1b7e7f87.js"></script>
+          </p>
+          <p class="text-center">(source: <a href="https://www.coursera.org/learn/react-native">Multiplatform Mobile App
+              Development with React Native on Coursera</a>)</p>
       </div>
     </div>
   </div>
