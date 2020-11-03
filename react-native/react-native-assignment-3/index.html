@@ -52,41 +52,52 @@
 <body id="page-top">
   <!-- Navigation -->
   <div data-include="navigation"></div>
-
   <div class="container mt-5">
     <div class="row justify-content">
       <div class="col-lg-12">
         <h1 class="mb-5 text-left">React Native Alerts, Animations, Gestures, and Persist Redux Store Assignment</h1>
         <p class="text-justify"><strong>Instruction</strong></br>
-          In this assignment you will explore the addition of Animations, Gesture recognition and Alerts. You will animate the appearance of the reservation form. When the reservation form is submitted, you will show an alert to ask the user to confirm or cancel the reservation request. You will also add a gesture to the Dishdetail component that will pop up the comment form when the user performs the gesture on the screen.
+          In this assignment you will explore the addition of Animations, Gesture recognition and Alerts. You will
+          animate the appearance of the reservation form. When the reservation form is submitted, you will show an alert
+          to ask the user to confirm or cancel the reservation request. You will also add a gesture to the Dishdetail
+          component that will pop up the comment form when the user performs the gesture on the screen.
         </p>
         <p class="text-justify">
           <strong>Assignment Overview</strong> </br>
-          In this assignment you will be working with the Reservation Component and the reservation form within the view. You will add animations to the form. When the user submits the form, you will pop up a confirmation alert. Also you will add another gesture support to Dishdetail component.
+          In this assignment you will be working with the Reservation Component and the reservation form within the
+          view. You will add animations to the form. When the user submits the form, you will pop up a confirmation
+          alert. Also you will add another gesture support to Dishdetail component.
         </p>
         <p class="text-justify">
           <strong>Assignment Requirements</strong> </br>
           <b>Task 1</b>
         <ul class="mb-0">
-          <li>You will add a zoom in animation using the Animatable.View to the reservation form in the Reservation component. When the user opens the Reservation view, the form will zoom in to the page as illustrated in the video.</li>
+          <li>You will add a zoom in animation using the Animatable.View to the reservation form in the Reservation
+            component. When the user opens the Reservation view, the form will zoom in to the page as illustrated in the
+            video.</li>
         </ul>
         </p>
         </p>
         <p class="text-justify">
           <b>Task 2</b>
         <ul class="mb-0">
-          <li>When the user fills the reservation form and submits the form, then you will pop up a confirmation Alert with two options: Cancel and OK, as shown in the screenshot below. You will remove the modal that we had added in an earlier exercise to show the details of the form.</li>
+          <li>When the user fills the reservation form and submits the form, then you will pop up a confirmation Alert
+            with two options: Cancel and OK, as shown in the screenshot below. You will remove the modal that we had
+            added in an earlier exercise to show the details of the form.</li>
           <li>The submitted information should be displayed as shown below</li>
           <img class="img-fluid mt-3" src="/img/blog/assignment3.jpg">
           <li>If the user clicks on the Cancel option, then you will reset the form.</li>
-          <li>If the user clicks on the OK option, you will also reset the form. Additional steps will be added in the exercises in teh next module.</li>
+          <li>If the user clicks on the OK option, you will also reset the form. Additional steps will be added in the
+            exercises in teh next module.</li>
         </ul>
         </p>
         <p class="text-justify">
           <b>Task 3</b>
         <ul class="mb-0">
-          <li>Add support for a left to right gesture in the Dishdetail component. When the user swipes from left to right, then you should open the modal containing the comment form.</li>
-          <li>To do this, implement a new function named recognizeComment() that is passed in the gesture state as the parameter. It then recognizes and returns true if the left to right gesture is done, false otherwise.</li>
+          <li>Add support for a left to right gesture in the Dishdetail component. When the user swipes from left to
+            right, then you should open the modal containing the comment form.</li>
+          <li>To do this, implement a new function named recognizeComment() that is passed in the gesture state as the
+            parameter. It then recognizes and returns true if the left to right gesture is done, false otherwise.</li>
           <li>Use this function in the PanResponder methods to toggle the showing of the comment form modal.</li>
         </ul>
         </p>

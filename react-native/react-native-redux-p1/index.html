@@ -52,7 +52,6 @@
 <body id="page-top">
   <!-- Navigation -->
   <div data-include="navigation"></div>
-
   <div class="container mt-5">
     <div class="row justify-content">
       <div class="col-lg-12">
@@ -68,12 +67,10 @@
           <p class="text-justify">
             <b>1.</b> Setting up Redux
           <ul style="margin-bottom: 0;">
-            <li>First, set up Redux and allied packages by typing the following at the prompt in your project folder:
+            <li>First, set up Redux (tested on v4.0.5) and allied packages by typing the following at the prompt in your
+              project folder:
               <ul>
-                <li>npm install react-native-elements --save</li>
-                <li>npm install @react-navigation/native @react-navigation/stack @react-navigation/drawer --save</li>
-                <li>expo install react-native-gesture-handler react-native-reanimated react-native-screens @react-native-community/masked-view react-native-safe-area-context</li>
-                <li>npm install redux react-redux redux-thunk redux-logger --save</li>
+                <li><i>$ npm install redux react-redux redux-thunk redux-logger --save</i></li>
               </ul>
             </li>
             <li>
@@ -95,10 +92,10 @@
             <script src="https://gist.github.com/TDKTechSols/36b764c9e9083c16862900df6cd04384.js"></script>
             <li>Then, add a file named leaders.js in the redux folder and update it as follows:</li>
             </br>
-            <script src="https://gist.github.com/TDKTechSols/8dadb6889ab33578c76e63d9041fe0c4.js"></script>          
+            <script src="https://gist.github.com/TDKTechSols/8dadb6889ab33578c76e63d9041fe0c4.js"></script>
             <li>Then, add a file named ConfigureStore.js in the redux folder and add the following to it:</li>
             </br>
-            <script src="https://gist.github.com/TDKTechSols/565e7618ed508defc77efdec4f047e3b.js"></script>          
+            <script src="https://gist.github.com/TDKTechSols/565e7618ed508defc77efdec4f047e3b.js"></script>
           </ul>
           </p>
           <p class="text-justify">
@@ -118,8 +115,7 @@
           <p class="text-justify">
             <b>3.</b> Start json-server </br>
           <ul style="margin-bottom: 0;">
-            <li>json-server --watch db.json --delay 2000 --port 3001 --host 0.0.0.0
-            </li>
+            <li><i>$ json-server --watch db.json --delay 2000 --port 3001 --host 0.0.0.0</i></li>
             <li>Make sure that you are running <b><i>expo start</i></b> at the command prompt in a terminal or command
               window in your
               project folder.</li>
