@@ -24,7 +24,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>PHP Functionals - Customer - Remove To Cart | TDK</title>
+  <title>React Forms and Redux Assignment | TDK</title>
   <!-- Font Awesome Icons -->
   <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 
@@ -52,38 +52,54 @@
 <body id="page-top">
   <!-- Navigation -->
   <div data-include="navigation"></div>
-
   <div class="container mt-5">
     <div class="row justify-content">
       <div class="col-lg-12">
-        <h1 class="mb-5 text-left">Functionals</h2>
-          <p class="text-justify">
-            <b>2.20 Customer - remove2cart </b>
-          </p>
-          <p class="text-justify ml-3">
-            <b>2.20.1 Cart class</b>
-          <ul class="mb-0">
-            <li>Update models/Cart.php file</li>
+        <h1 class="mb-5 text-left">React Forms and Redux Assignment</h1>
+        <p class="text-justify"><strong>Instruction</strong></br>
+          In this assignment, you will be updating the React application with a react-redux-form based local form and do the form validation in code.
+        </p>
+        <p class="text-justify">
+          <strong>Assignment Overview</strong> </br>
+          In this assignment, you will update the DishdetailComponent.js to include a form and do the form validation in code. At the end of this assignment, you should have completed the following tasks to update the page:
+          <ul>
+            <li>Added a new class component named CommentForm to DishdetailComponent.js</li>
+            <li>Provide a form to enable users to submit their comments</li>
+            <li>Validate the information entered by the users in the form</li>
           </ul>
-          <script src="https://gist.github.com/TDKTechSols/e06f25fe66277482c4b9ee3f1b0f1781.js"></script>
-          </p>
-          <p class="text-justify ml-3">
-            <b>2.20.2 CustomerController </b>
-          <ul class="mb-0">
-            <li>Update controllers/customer_controller.php file</li>
+        </p>
+        <p class="text-justify">
+          <strong>Assignment Requirements</strong> </br>
+          <b>Task 1</b> </br>
+          In this task you will add a new class component named CommentForm You need to complete the following:
+          <ul>
+            <li>Add a new class component named CommentForm that will add a button to the view as shown in the image below.</li>
+            <li>When the button is clicked, it toggles a modal that will display the comment form.</li>
+            <li>The CommentForm component is used by the RenderComments function to display the button for toggling the modal.</li>
           </ul>
-          <script src="https://gist.github.com/TDKTechSols/d7ba71004be4ff34858f92466741d036.js"></script>
-          </p>
-          <p class="text-justify ml-3">
-            <b>2.20.3 Routes </b>
-          <ul class="mb-0">
-            <li>Update routes.php file</li>
-          </ul> 
-          <script src="https://gist.github.com/TDKTechSols/00e6e3b1d74474fcc41c83dfb8907aa9.js"></script>
-          <ul class="mb-0"> Browser:
-            <li>http://domain/index.php?controller=customer\&action=mycart</li>
+        </p>
+        <p class="text-justify">
+          <b>Task 2</b></br>
+          In this task you will construct the form for users to submit their comments as shown in the image below. You need to complete the following:
+          <ul style="margin-bottom: 0;">
+            <li>Set up the form as a local form using the react-redux-form with the three fields: author, rating and comment.</li>
+            <li>The rating field in the comment form is implemented using a select, the author is implemented using a text field, while the comment uses a textarea with six rows.</li>
           </ul>
-          </p>
+        </p>
+        <p class="text-justify">
+          <b>Task 3</b></br>
+          In this task, you will enable form validation as shown in the images below. You need to complete the following:
+          <ul style="margin-bottom: 0;">
+            <li>The author field should at least be three characters long.</li>
+            <li>The author field should be less than or equal to 15 characters.</li>
+            <li>The user should be alerted by showing the invalid message displayed at the bottom of the field.</li>
+            <img class="img-fluid mt-3" src="/img/blog/reactjs-as3-1.png">
+            <img class="img-fluid mt-3" src="/img/blog/reactjs-as3-2.png">
+            <img class="img-fluid mt-3" src="/img/blog/reactjs-as3-3.png">
+            <img class="img-fluid mt-3" src="/img/blog/reactjs-as3-4.png">
+          </ul>
+        </p>
+        <p class="text-center">(source: <a href="https://www.coursera.org/learn/front-end-react">Front-End Web Development with React on Coursera</a>)</p>
       </div>
     </div>
   </div>
@@ -101,6 +117,7 @@
   <!-- Custom scripts for this template -->
   <script src="/js/creative.min.js"></script>
 
+  <!-- Custom scripts for blog template -->
   <script src="/assets/web/assets/jquery/jquery.min.js"></script>
   <script src="/assets/popper/popper.min.js"></script>
   <script src="/assets/tether/tether.min.js"></script>
@@ -112,7 +129,7 @@
   <script src="/assets/dropdown/js/script.min.js"></script>
   <script src="/assets/theme/js/script.js"></script>
   <script src="/include.js"></script>
-  
+
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {},

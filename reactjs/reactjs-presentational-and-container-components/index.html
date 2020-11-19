@@ -24,7 +24,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>PHP Functionals - Customer - Remove To Cart | TDK</title>
+  <title>React Presentational and Container Components | TDK</title>
   <!-- Font Awesome Icons -->
   <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 
@@ -52,38 +52,46 @@
 <body id="page-top">
   <!-- Navigation -->
   <div data-include="navigation"></div>
-
   <div class="container mt-5">
     <div class="row justify-content">
       <div class="col-lg-12">
-        <h1 class="mb-5 text-left">Functionals</h2>
+        <h1 class="mb-5 text-left">Presentational and Container Components</h2>
           <p class="text-justify">
-            <b>2.20 Customer - remove2cart </b>
-          </p>
-          <p class="text-justify ml-3">
-            <b>2.20.1 Cart class</b>
-          <ul class="mb-0">
-            <li>Update models/Cart.php file</li>
-          </ul>
-          <script src="https://gist.github.com/TDKTechSols/e06f25fe66277482c4b9ee3f1b0f1781.js"></script>
-          </p>
-          <p class="text-justify ml-3">
-            <b>2.20.2 CustomerController </b>
-          <ul class="mb-0">
-            <li>Update controllers/customer_controller.php file</li>
-          </ul>
-          <script src="https://gist.github.com/TDKTechSols/d7ba71004be4ff34858f92466741d036.js"></script>
-          </p>
-          <p class="text-justify ml-3">
-            <b>2.20.3 Routes </b>
-          <ul class="mb-0">
-            <li>Update routes.php file</li>
-          </ul> 
-          <script src="https://gist.github.com/TDKTechSols/00e6e3b1d74474fcc41c83dfb8907aa9.js"></script>
-          <ul class="mb-0"> Browser:
-            <li>http://domain/index.php?controller=customer\&action=mycart</li>
+            In this tutorial, we understand about how presentational components deal with the look and feel of the app and container components deal with the data and behavior. At the end of this tutorial, you will learn about:
+          <ul style="margin-bottom: 0;">
+            <li>Organizing your React app into presentational and container components</li>
+            <li>Enable your presentational components to be concerned with the look and feel of your app</li>
+            <li>Enable container components to deal with the state, provide the data and handle user interactions</li>
           </ul>
           </p>
+          <p class="text-justify">
+            <b>Install library</b>
+          <ul class="mb-0">
+            <li><i>$ npm install date-fns --save</i></li>
+          </ul>
+          </p>
+          <p class="text-justify">
+            <b>Add a Container Component</b>
+          <ul class="mb-0">
+            <li>Add a new component named MainComponent.js in the components folder and update its contents as follows:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/13412656eaffe447f95cae200997a6ba.js"></script>
+          <ul class="mb-0">
+            <li>Update the App.js by removing the state related information, and make use of Main Component to render the UI:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/30a7511038f23198ada19388e65bff23.js"></script>
+          </p>
+          <p class="text-justify">
+            <b>Turn Menu Component into a Presentational Component</b>
+          <ul class="mb-0">
+            <li>Open MenuComponent.js and update its contents by removing the state and removing the DishdetailComponent reference, and make use of the onClick supplied by MainComponent through the props to deal with the clicking of a menu item:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/505a77256101a881d3ee66b55d8db8fc.js"></script>
+          <ul class="mb-0">
+            <li>The DishdetailComponent is already structured as a presentational component and hence needs no further update, except wrapping the return value from render() within a &lt;div&gt; with the className as container.</li>
+            <li>To print out the date for a comment in a format more suitable for human readability, you can update your renderComment function with the code snippet shown below:</li>
+          </ul>
+          <p class="text-center">(source: <a href="https://www.coursera.org/learn/front-end-react">Front-End Web Development with React on Coursera</a>)</p>
       </div>
     </div>
   </div>
@@ -101,6 +109,7 @@
   <!-- Custom scripts for this template -->
   <script src="/js/creative.min.js"></script>
 
+  <!-- Custom scripts for blog template -->
   <script src="/assets/web/assets/jquery/jquery.min.js"></script>
   <script src="/assets/popper/popper.min.js"></script>
   <script src="/assets/tether/tether.min.js"></script>
@@ -112,7 +121,7 @@
   <script src="/assets/dropdown/js/script.min.js"></script>
   <script src="/assets/theme/js/script.js"></script>
   <script src="/include.js"></script>
-  
+
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
