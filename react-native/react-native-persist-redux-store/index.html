@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon-generated/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon-generated/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon-generated/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon-generated/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon-generated/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon-generated/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon-generated/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon-generated/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon-generated/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-generated/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-generated/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-generated/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-generated/favicon-16x16.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>React Native Persist Redux Store | TDK</title>
+  <!-- Font Awesome Icons -->
+  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+    rel="stylesheet" type="text/css" />
+
+  <!-- Plugin CSS -->
+  <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" />
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="/css/creative.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/web/assets/mobirise-icons/mobirise-icons.css" />
+  <link rel="stylesheet" href="/assets/tether/tether.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="/assets/socicon/css/styles.css" />
+  <link rel="stylesheet" href="/assets/dropdown/css/style.css" />
+  <link rel="stylesheet" href="/assets/theme/css/style.css" />
+  <link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" type="text/css" />
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <div data-include="navigation"></div>
+  <div class="container mt-5">
+    <div class="row justify-content">
+      <div class="col-lg-12">
+        <h1 class="mb-5 text-left">Persist Redux Store</h2>
+          <p class="text-justify">
+            In this tutorial, you will learn to use redux-persist to persist the state of your Redux store, and
+            rehydrate it when you restart your app. At the end of this tutorial, you will be able to:
+          <ul class="mb-0">
+            <li>Set up and configure redux-persist</li>
+            <li>Persist your store and rehydrate on restart of the app</li>
+          </ul>
+          </p>
+          <hr/>
+          <p><b>How to:</b></p>
+          <p class="text-justify">
+            <b>1.</b> Install libraries (tested on v6.0.0 for redux-persist and v1.13.0 for async-storage)
+          <ul class="mb-0">
+            <li><i>$ npm install redux-persist --save</i></li>
+            <li><i>$ expo install @react-native-async-storage/async-storage</i></li>
+          </ul>
+          </p>
+          <p class="text-justify">
+            <b>2.</b> Persist Store:
+          <ul class="mb-0">
+            <li>Open ConfigureStore.js and update it as follows:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/d0ed717e01affc19014f302c1f6ccd5d.js"></script>
+          <ul class="mb-0">
+            <li>Open App.js and update it as follows:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/dd1a6d3f625aeb7938bba9cb3cd074da.js"></script>
+          </p>
+          <hr/>
+          <p class="text-justify"><b>Screenshots:</b></p>
+          <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/Persist-Redux-Store-1.PNG">
+          <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/Persist-Redux-Store-2.jpg">
+          <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/Persist-Redux-Store-3.PNG">
+          <p class="text-center mt-3">(source: <a href="https://www.coursera.org/learn/react-native">Multiplatform Mobile App
+              Development with React Native on Coursera</a>)</p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div data-include="footer"></div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="/js/creative.min.js"></script>
+
+  <!-- Custom scripts for blog template -->
+  <script src="/assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="/assets/popper/popper.min.js"></script>
+  <script src="/assets/tether/tether.min.js"></script>
+  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/smooth-scroll/smooth-scroll.js"></script>
+  <script src="/assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+  <script src="/assets/jarallax/jarallax.min.js"></script>
+  <script src="/assets/social-likes/social-likes.js"></script>
+  <script src="/assets/dropdown/js/script.min.js"></script>
+  <script src="/assets/theme/js/script.js"></script>
+  <script src="/include.js"></script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/5ef22b679e5f694422912883/default";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>

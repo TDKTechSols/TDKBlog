@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon-generated/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon-generated/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon-generated/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon-generated/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon-generated/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon-generated/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon-generated/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon-generated/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon-generated/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-generated/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-generated/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-generated/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-generated/favicon-16x16.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Using Redux in your React Native App Part 1 | TDK</title>
+  <!-- Font Awesome Icons -->
+  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+    rel="stylesheet" type="text/css" />
+
+  <!-- Plugin CSS -->
+  <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" />
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="/css/creative.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/web/assets/mobirise-icons/mobirise-icons.css" />
+  <link rel="stylesheet" href="/assets/tether/tether.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="/assets/socicon/css/styles.css" />
+  <link rel="stylesheet" href="/assets/dropdown/css/style.css" />
+  <link rel="stylesheet" href="/assets/theme/css/style.css" />
+  <link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" type="text/css" />
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <div data-include="navigation"></div>
+  <div class="container mt-5">
+    <div class="row justify-content">
+      <div class="col-lg-12">
+        <h1 class="mb-5 text-left">Using Redux in your React Native App Part 1</h2>
+          <p class="text-justify">
+            In this tutorial, you will set up Redux in your React Native application. At the end of this tutorial, you
+            will be able to:
+          <ul class="mb-0">
+            <li>Set up Redux for your app</li>
+            <li>Create reducers, actions and action creators</li>
+          </ul>
+          </p>
+          <hr/>
+          <p><b>Dataflow:</b></p>
+          <img class="img-fluid" src="/img/blog/react-native/dataflow/dataflow-Redux.png"><br/><br/>
+          <p><b>Redux lifecycle:</b></p>
+          <img class="img-fluid" width="40%" src="/img/blog/react-native/redux-lifecycle.png">
+          <hr/>
+          <p><b>How to:</b></p>
+          <p class="text-justify">
+            <b>1.</b> Setting up Redux:
+          <ul class="mb-0">
+            <li>First, set up Redux (tested on v4.0.5 for redux, v7.2.2 for react-redux, v2.3.0 for redux-thunk and v3.0.6 for redux-logger) and allied packages by typing the following at the prompt in your
+              project folder:
+              <ul>
+                <li><i>$ npm install redux react-redux redux-thunk redux-logger --save</i></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="mb-0">
+            <li>Next, create a file named baseUrl.js in the shared folder and add the following to it:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/02408faa845360cd72db2a07c5be86c5.js"></script>
+          <ul class="mb-0">
+            <li>Then, create a folder named redux in your project</li>
+            <li>First, add a new file named ActionTypes.js in the redux folder, and add the following to it:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/dadea744772c9c5a9b1aff3f822f9a05.js"></script>
+          <ul class="mb-0">
+            <li>Next, add a file named ActionCreators.js in the redux folder and add the following to it:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/36b764c9e9083c16862900df6cd04384.js"></script>
+          <ul class="mb-0">
+            <li>Then, add a file named leaders.js in the redux folder and update it as follows:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/8dadb6889ab33578c76e63d9041fe0c4.js"></script>
+          <ul class="mb-0">
+            <li>Then, add a file named ConfigureStore.js in the redux folder and add the following to it:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/565e7618ed508defc77efdec4f047e3b.js"></script>
+          </p>
+          <p class="text-justify">
+            <b>2.</b> Connecting to Redux:
+          <ul class="mb-0">
+            <li>First, open App.js and update it to enable your React Native app to make use of Redux as follows:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/55cc3cd4b741e0611d8ea56cdb3239ec.js"></script>
+          <ul class="mb-0">
+            <li>Then, open MainComponent.js and update it as follows:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/14bfdcd5d82cf86720addfe83fc7eb30.js"></script>
+          <ul class="mb-0">
+            <li>Finally, open AboutComponent.js and update it as follows:</li>
+          </ul>
+          <script src="https://gist.github.com/TDKTechSols/e2a7a02aaacda44252ce19142eae6419.js"></script>
+          </p>
+          <hr/>
+          <p class="text-justify"><b>Screenshots:</b></p>
+          <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/redux-part1.PNG">
+          <p class="text-center mt-3">(source: <a href="https://www.coursera.org/learn/react-native">Multiplatform Mobile App
+              Development with React Native on Coursera</a>)</p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div data-include="footer"></div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="/js/creative.min.js"></script>
+
+  <!-- Custom scripts for blog template -->
+  <script src="/assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="/assets/popper/popper.min.js"></script>
+  <script src="/assets/tether/tether.min.js"></script>
+  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/smooth-scroll/smooth-scroll.js"></script>
+  <script src="/assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+  <script src="/assets/jarallax/jarallax.min.js"></script>
+  <script src="/assets/social-likes/social-likes.js"></script>
+  <script src="/assets/dropdown/js/script.min.js"></script>
+  <script src="/assets/theme/js/script.js"></script>
+  <script src="/include.js"></script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/5ef22b679e5f694422912883/default";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>

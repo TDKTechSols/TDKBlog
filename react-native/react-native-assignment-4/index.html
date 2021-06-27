@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon-generated/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon-generated/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon-generated/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon-generated/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon-generated/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon-generated/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon-generated/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon-generated/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon-generated/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-generated/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-generated/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-generated/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-generated/favicon-16x16.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Accessing Native Capabilities of Devices: The Expo SDK (Assignment) | TDK</title>
+  <!-- Font Awesome Icons -->
+  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+    rel="stylesheet" type="text/css" />
+
+  <!-- Plugin CSS -->
+  <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" />
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="/css/creative.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/web/assets/mobirise-icons/mobirise-icons.css" />
+  <link rel="stylesheet" href="/assets/tether/tether.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.min.css" />
+  <link rel="stylesheet" href="/assets/socicon/css/styles.css" />
+  <link rel="stylesheet" href="/assets/dropdown/css/style.css" />
+  <link rel="stylesheet" href="/assets/theme/css/style.css" />
+  <link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" type="text/css" />
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <div data-include="navigation"></div>
+  <div class="container mt-5">
+    <div class="row justify-content">
+      <div class="col-lg-12">
+        <h1 class="mb-5 text-left">Accessing Native Capabilities of Devices: The Expo SDK</h1>
+        <p class="text-justify"><strong>Instruction</strong></br>
+          The final assignment concentrates on Expo SDK and the use of the API for accessing the native device
+          capabilities. You can find the links to these API in the additional resources. In this assignment you will
+          enhance the application to use an image from the photo library on your device using the ImagePicker API. Also,
+          you will access the device calendar and add an event to it from the app.
+        </p>
+        <hr/>
+        <p><b>Assignment Requirements:</b></p>
+        <p class="text-justify">
+          <b>Task 1</b>
+        <ul class="mb-0">
+          In this task you will make use of the Expo SDK ImagePicker API to enable your application to fetch an image
+          from the photo library.
+          <li>Update RegisterComponent.js to set up a function named getImageFromGallery() that fetches the image from the
+            photo library on the device using the ImagePicker API support. Details of setting up the source to be the
+            Photo Library can be found in the API documentation.</li>
+          <li>Add a new button named Gallery that when clicked will initiate the process to enable the user to select a
+            picture from the photo library using the ImagePicker API.</li>
+          <li>Once the image is picked, it must be processed through the ImageManipulator to obtain a resized PNG
+            version of the image as we did in the exercise.</li>
+        </ul>
+        </p>
+        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-1.PNG">
+        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-2.PNG">
+        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-3.PNG">
+        </p>
+        <p class="text-justify">
+          <b>Task 2</b>
+        <ul class="mb-0">
+          In this task you will insert a new Calendar event into the default calendar on the mobile device for the table
+          reservation. You will use the Calendar API from Expo SDK for this. You will implement this in the
+          ReservationComponent.js file.
+          <li>When the user submits the reservation form, you will obtain the details of the reservation in the
+            handleReservation() function.</li>
+          <li>Implement a new function named obtainCalendarPermission() that will ask for permission to access the
+            calendar on the device. The corresponding permission is Permission.CALENDAR.</li>
+          <li>Implement another function named addReservationToCalendar() that receives the date information as a
+            parameter. This function is invoked from the handleReservation() function.</li>
+          <li>You should use the createEventAsync() function from the Calendar API to insert the event into the default
+            calendar (Calendar.DEFAULT). This function takes a title, the start and end time, timezone and location as
+            the parameters.</li>
+          <li>Use 'Con Fusion Table Reservation' as the title of the inserted event</li>
+          <li>To specify the start Date and end Date, you can convert the Date ISO string into a Date object by using
+            new Date(Date.parse(date)). Furthermore, the Date.parse() gives you the date value in milliseconds. You can
+            set up the end time by adding 2 hours (2*60*60*1000) to the milliseconds and use it to generate the Date
+            object corresponding to the end time of the event.</li>
+          <li>For time zone use 'Asia/Hong_Kong', and the location as '121, Clear Water Bay Road, Clear Water Bay,
+            Kowloon, Hong Kong'</li>
+        </ul>
+        </p>
+        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-4.PNG">
+        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-5.PNG">
+        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-6.PNG">
+        <hr/>
+        <p><b>Assignment Rubric:</b></p>
+        <ul style="font-style: normal;">
+          <li><b>4.1 </b>[5 points] fetch an image from the photo library, if the alignment of Camera button & Gallery button is wrong then <b>-1</b> point</li>
+          <li><b>4.2 </b>[5 points] insert a new Calendar event into the default calendar on the mobile device for the table reservation, if show unnecessary alert then <b>-1</b> point</li>
+        </ul>
+        <p class="text-center mt-3">(source: <a href="https://www.coursera.org/learn/react-native">Multiplatform
+            Mobile App Development
+            with React Native on Coursera</a>)</p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div data-include="footer"></div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="/js/creative.min.js"></script>
+
+  <!-- Custom scripts for blog template -->
+  <script src="/assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="/assets/popper/popper.min.js"></script>
+  <script src="/assets/tether/tether.min.js"></script>
+  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/assets/smooth-scroll/smooth-scroll.js"></script>
+  <script src="/assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+  <script src="/assets/jarallax/jarallax.min.js"></script>
+  <script src="/assets/social-likes/social-likes.js"></script>
+  <script src="/assets/dropdown/js/script.min.js"></script>
+  <script src="/assets/theme/js/script.js"></script>
+  <script src="/include.js"></script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/5ef22b679e5f694422912883/default";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>
