@@ -64,40 +64,46 @@
             <li>Click on a delete option button to delete the favorite</li>
           </ul>
           </p>
-          <hr/>
+          <hr />
           <p><b>How to:</b></p>
           <p class="text-justify">
-            <b>1.</b> Install react-native-swipeout library (open node_modules/react-native-swipeout/dist/index.js then
-            edit to UNSAFE_componentWillMount and UNSAFE_componentWillReceiveProps):
+            <b>1.</b> Install react-native-swipe-list-view (tested on v3.2.9).
           <ul class="mb-0">
-            <li><i>$ npm install https://github.com/krakz999/react-native-swipeout --save</i></li>
+            <li><i>$ npm install react-native-swipe-list-view --save</i></li>
           </ul>
           </p>
           <p class="text-justify">
-            <b>2.</b> Swipeout and deleting Favorites:
+            <b>2.</b> Setting up Redux:
           <ul class="mb-0">
-            <li>Add a new action to ActionTypes.js as follows:</li>
+            <li>Update 'redux/ActionTypes.js' file (action).</li>
           </ul>
           <script src="https://gist.github.com/TDKTechSols/5f1407de3bca22b4db414e093c68a867.js"></script>
           <ul class="mb-0">
-            <li>Then add a new action creator to ActionCreators.js as follows:</li>
+            <li>Update 'redux/ActionCreators.js' file (action).</li>
           </ul>
           <script src="https://gist.github.com/TDKTechSols/79bfdec8ff5a751717dbd94475e1f1e2.js"></script>
           <ul class="mb-0">
-            <li>Then, update the favorites.js reducer as follows:</li>
+            <li>Update 'redux/favorites.js' file (reducer).</li>
           </ul>
           <script src="https://gist.github.com/TDKTechSols/a2f693166932256c8c6063b0ffb219af.js"></script>
+          </p>
+          <p class="text-justify">
+            <b>3.</b> Setting up Redux:
           <ul class="mb-0">
-            <li>Then, finally update FavoriteComponent.js as follows:</li>
+            <li>Update 'components/FavoriteComponent.js' file.</li>
           </ul>
           <script src="https://gist.github.com/TDKTechSols/8f685637a69310812f60963518ddbb0e.js"></script>
           </p>
-          <hr/>
+          <hr />
           <p class="text-justify"><b>Screenshots:</b></p>
-          <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/react-native-swipeout-and-deleting-favorites-p1.PNG">
-          <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/react-native-swipeout-and-deleting-favorites-p2.PNG">
-          <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/react-native-swipeout-and-deleting-favorites-p3.PNG">
-          <p class="text-center mt-3">(source: <a href="https://www.coursera.org/learn/react-native">Multiplatform Mobile App
+          <img class="img-fluid" width="30%" style="border: 1px solid black;"
+            src="/img/blog/react-native/screenshot/react-native-swipeout-and-deleting-favorites-p1.PNG">
+          <img class="img-fluid" width="30%" style="border: 1px solid black;"
+            src="/img/blog/react-native/screenshot/react-native-swipeout-and-deleting-favorites-p2.PNG">
+          <img class="img-fluid" width="30%" style="border: 1px solid black;"
+            src="/img/blog/react-native/screenshot/react-native-swipeout-and-deleting-favorites-p3.PNG">
+          <p class="text-center mt-3">(source: <a href="https://www.coursera.org/learn/react-native">
+              Multiplatform Mobile App
               Development with React Native on Coursera</a>)</p>
       </div>
     </div>
