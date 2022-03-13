@@ -74,7 +74,21 @@
               title="Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a JavaScript everywhere paradigm,[6] unifying web-application development around a single programming language, rather than different languages for server- and client-side scripts."
               target="blank">NodeJS</a>.
             Get started with Node to use everything in the JS ecosystem, including Expo and React Native. We recommend
-            using the latest Node version.
+            using the latest Node version OR update Node:
+            <ul class="mb-0">
+              <li>Windows: uninstall and install the latest version.</li>
+              <li>MacOS: use the sudo command.</li>
+              <ul>
+                <li>Upgrade NPM:</li>
+                <i class="ml-3">$ npm install npm --global</i>
+                <li>Clean NPM cache:</li>
+                <i class="ml-3">$ npm cache clean --force</i>
+                <li>Install N package:</li>
+                <i class="ml-3">$ npm install n --global</i>
+                <li>Install NodeJS stable:</li>
+                <i class="ml-3">$ n stable</i>
+              </ul>
+            </ul>   
           </p>
           <p class="text-justify">
             <b>2.</b> Get the command line tool: </br>
@@ -101,7 +115,7 @@
           <ul class="mb-0">
             <li>Select your favorite editor, like Atom, <a href="https://code.visualstudio.com/"
                 target="blank">VSCode</a>, Sublime Text, Vim, or Emacs,…</li>
-            <li>Edit yourProject/App.js: replace “Open up App.js to start working on your app” by "Hello
+            <li>Edit &lt;projectname&gt;/App.js: replace “Open up App.js to start working on your app” by "Hello
               &lt;yourname&gt;"</li>
           </ul>
           </p>
