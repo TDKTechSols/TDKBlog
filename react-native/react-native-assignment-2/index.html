@@ -55,22 +55,15 @@
   <div class="container mt-5">
     <div class="row justify-content">
       <div class="col-lg-12">
-        <h1 class="mb-5 text-left">React Native UI Elements and Redux</h1>
-        <p class="text-justify"><strong>Instruction</strong></br>
-          In this assignment you will explore React Native Modal and forms, and set up a form to submit a comment about
-          a dish. You will also set up the appropriate actions, action creators and update the comments reducer for
-          adding the comment to the list of comments for the dish.
-        </p>
-        <p class="text-justify">
-          <strong>Assignment Overview</strong> </br>
-          In this assignment, you will use a modal containing a form that enables you to add your comments about the
-          dish. When the comment is submitted, then an action is dispatched to add the comment to the list of comments.
+        <h1 class="mb-5 text-left">2.11 Assignment 2</h1>
+        <p class="text-justify"></br>
+          In this assignment, you will use a modal containing a form that enables you to add your comments about the dish. When the comment is submitted, then an action is dispatched to add the comment to the list of comments.
         </p>
         <hr/>
-        <p><b>Dataflow:</b></p>
+        <p><b>2.11.1 Dataflow:</b></p>
         <img class="img-fluid" src="/img/blog/react-native/dataflow/dataflow-Assignment 2.png">
         <p class="text-justify">
-          <strong>Assignment Requirements:</strong>
+          <b>2.12.2 Requirements:</b>
         <p><b>Task 1</b></p>
         <ul>
           <li>Implement a modal containing the "form" that enables the user to add comments on the dish in the
@@ -84,11 +77,9 @@
             to allow you to add the comment. The dispatch of the action should be done in the handleComment() function
             that handles the form submission in code.</li>
           <li>Add an icon to the Card displaying the dish, which when clicked, will show the modal. The icon should use
-            the Font Awesome pencil icon.</li>
-            <img class="img-fluid mt-3" width="50%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment2-1.jpg">
+            the Font Awesome pencil icon.</li>            
         </ul>
         </p>
-
         <p class="text-justify"><b>Task 2</b>
         <ul style="margin-bottom: 0;">
           <li>Add an Action named ADD_COMMENT to the ActionTypes.js.</li>
@@ -98,35 +89,20 @@
             to set the date to ISO string. It will delay for 2 seconds and then dispatch addComment().</li>
           <li>Update the comments reducer function to handle the new ADD_COMMENT action and add the comment to the list
             of comments. The handling of the action should also ensure that appropriate ID will be added to the comment.
-          </li>
-          <img class="img-fluid mt-3" width="50%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment2-2.jpg">
+          </li>       
         </ul>
         </p>
-        <!-- <p class="text-justify"> <b>Review criteria</b> </br> Your submission will be graded based on the following
-          criteria:
-        <p><b>Task 1</b></p>
-        <ul style="margin-bottom: 0;">
-          <li>The modal containing the form is correctly added to the DIshdetail component</li>
-          <li>The form is correctly configured with the rating, author and comment fields.</li>
-          <li>An Icon is added to the RenderDish Card that will trigger the showing of the modal.</li>
-        </ul>
-        <p><b>Task 2</b></p>
-        <ul style="margin-bottom: 0;">
-          <li>The ADD_COMMENT action is correctly added</li>
-          <li>The postComment() action creator is correctly added</li>
-          <li>The addComment() action creator is correctly added and will be dispatched by postComment() after a 2 sec
-            delay</li>
-          <li>The comment reducer is updated to handle the ADD_COMMENT action</li>
-        </ul>
-        </p> -->
       <hr/>
-        <p><b>Assignment Rubric:</b></p>
+      <p class="text-justify"><b>2.11.3 Screenshots</b></p>
+      <img class="img-fluid mt-3" width="50%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment2-1.jpg">
+      <img class="img-fluid mt-3" width="50%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment2-2.jpg">
+        <p><b>2.11.4 Assessment</b></p>
         <ul style="font-style: normal;">
-          <li><b>2.1 </b>[2 points] show icon pencil, if the aligment is wrong then <b>-1</b> point</li>
-          <li><b>2.2 </b>[1 points] show rating by stars in comment list
-          <li><b>2.3 </b>[3 points] show Comment modal form, each control <b>1</b> point</li>
-          <li><b>2.4 </b>[2 points] submit new comment into comment list</li>
-          <li><b>2.5 </b>[2 points] keep new comment while changing screen</li>
+          <li>(2.1) show icon pencil (+2 points), the aligment is wrong (-1 point).</li>
+          <li>(2.2) show rating by stars in comment list (+1 points).</li>
+          <li>(2.3) show Comment modal form (+3 points).</li>
+          <li>(2.4) submit new comment into comment list (+2 points).</li>
+          <li>(2.5) keep new comment while changing screen (+2 points).</li>
         </ul>
         <p><br/></p>
       </div>
