@@ -55,26 +55,25 @@
   <div class="container mt-5">
     <div class="row justify-content">
       <div class="col-lg-12">
-        <h1 class="mb-5 text-left">Using Redux in your React Native App Part 1</h2>
+        <h1 class="mb-5 text-left">2.4 Using Redux in React Native App Part 1</h2>
           <p class="text-justify">
-            In this tutorial, you will set up Redux in your React Native application. At the end of this tutorial, you
-            will be able to:
+            In this tutorial, you will set up Redux in your React Native application. And you will connect to Redux and obtain the state informations such as leaders from there. At the end of this tutorial, you will be able to:
           <ul class="mb-0">
             <li>Set up Redux for your app</li>
             <li>Create reducers, actions and action creators</li>
           </ul>
           </p>
           <hr/>
-          <p><b>Dataflow:</b></p>
-          <img class="img-fluid" src="/img/blog/react-native/dataflow/dataflow-Redux.png"><br/><br/>
           <p><b>Redux lifecycle:</b></p>
           <img class="img-fluid" width="40%" src="/img/blog/react-native/redux-lifecycle.png">
+          <p><b>2.4.1 Dataflow:</b></p>
+          <img class="img-fluid" src="/img/blog/react-native/dataflow/dataflow-Redux.png"><br/><br/>
           <hr/>
-          <p><b>How to:</b></p>
+          <p><b>2.4.2 How to:</b></p>
           <p class="text-justify">
             <b>1.</b> Install Redux:
           <ul class="mb-0">
-            <li>Install redux (tested on v4.1.2), react-redux (tested on v7.2.6), redux-thunk (tested on v2.4.1), and redux- logger (tested on v3.0.6).
+            <li>Install redux (tested on v4.1.2), react-redux (tested on v7.2.6), redux-thunk (tested on v2.4.1), and redux-logger (tested on v3.0.6).
               <ul>
                 <li><i>$ npm install redux react-redux redux-thunk redux-logger --save</i></li>
               </ul>
@@ -84,39 +83,39 @@
           <script src="https://gist.github.com/TDKTechSols/02408faa845360cd72db2a07c5be86c5.js"></script>
           <b>3.</b> Setting up Redux:
           <ul class="mb-0">
-            <li>Create 'redux/ActionTypes.js' file (action).</li>
+            <li>(a) Create 'redux/ActionTypes.js' file (action).</li>
           </ul>
           <script src="https://gist.github.com/TDKTechSols/dadea744772c9c5a9b1aff3f822f9a05.js"></script>
           <ul class="mb-0">
-            <li>Create 'redux/ActionCreators.js' file (action).</li>
+            <li>(b) Create 'redux/ActionCreators.js' file (action).</li>
           </ul>
           <script src="https://gist.github.com/TDKTechSols/36b764c9e9083c16862900df6cd04384.js"></script>
           <ul class="mb-0">
-            <li>Create 'redux/leaders.js' file (reducer).</li>
+            <li>(c) Create 'redux/leaders.js' file (reducer).</li>
           </ul>
           <script src="https://gist.github.com/TDKTechSols/8dadb6889ab33578c76e63d9041fe0c4.js"></script>
           <ul class="mb-0">
-            <li>Create 'redux/ConfigureStore.js' file (store).</li>
+            <li>(d) Create 'redux/ConfigureStore.js' file (store).</li>
           </ul>
           <script src="https://gist.github.com/TDKTechSols/565e7618ed508defc77efdec4f047e3b.js"></script>
           </p>
           <p class="text-justify">
             <b>4.</b> Connecting to Redux:
           <ul class="mb-0">
-            <li>Update 'App.js' file.</li>
+            <li>(a) Update 'App.js' file.</li>
           </ul>
           <script src="https://gist.github.com/TDKTechSols/55cc3cd4b741e0611d8ea56cdb3239ec.js"></script>
           <ul class="mb-0">
-            <li>Update 'components/MainComponent.js' file.</li>
+            <li>(b) Update 'components/MainComponent.js' file.</li>
           </ul>
           <script src="https://gist.github.com/TDKTechSols/14bfdcd5d82cf86720addfe83fc7eb30.js"></script>
           <ul class="mb-0">
-            <li>Update 'components/AboutComponent.js' file.</li>
+            <li>(c) Update 'components/AboutComponent.js' file.</li>
           </ul>
           <script src="https://gist.github.com/TDKTechSols/e2a7a02aaacda44252ce19142eae6419.js"></script>
           </p>
           <hr/>
-          <p class="text-justify"><b>Screenshots:</b></p>
+          <p class="text-justify"><b>2.4.3 Screenshots</b></p>
           <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/redux-part1.PNG">
           <p><br/></p>
       </div>
