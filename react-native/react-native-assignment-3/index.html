@@ -52,60 +52,7 @@
 <body id="page-top">
   <!-- Navigation -->
   <div data-include="/include/navigation.html"></div>
-  <div class="container mt-5">
-    <div class="row justify-content">
-      <div class="col-lg-12">
-        <h1 class="mb-5 text-left">3.7 Assignment 3</h1>
-        <p class="text-justify">
-          In this assignment you will be working with the Reservation Component and the reservation form within the
-          view. You will add animations to the form. When the user submits the form, you will pop up a confirmation
-          alert. Also you will add another gesture support to Dishdetail component.
-        </p>
-        <hr/>
-        <p><b>3.7.1 Requirements</b></p>
-        <p class="text-justify">
-          <b>Task 1</b>
-        <ul class="mb-0">
-          <li>You will add a zoom in animation using the Animatable.View to the reservation form in the Reservation
-            component. When the user opens the Reservation view, the form will zoom in to the page as illustrated in the
-            video.</li>
-        </ul>
-        </p>
-        <p class="text-justify">
-          <b>Task 2</b>
-        <ul class="mb-0">
-          <li>When the user fills the reservation form and submits the form, then you will pop up a confirmation Alert
-            with two options: Cancel and OK, as shown in the screenshot below. You will remove the modal that we had
-            added in an earlier exercise to show the details of the form.</li>
-          <li>The submitted information should be displayed as shown below</li>
-          <li>If the user clicks on the Cancel option, then you will reset the form.</li>
-          <li>If the user clicks on the OK option, you will also reset the form. Additional steps will be added in the
-            exercises in teh next module.</li>
-        </ul>
-        </p>
-        <p class="text-justify">
-          <b>Task 3</b>
-        <ul class="mb-0">
-          <li>Add support for a left to right gesture in the Dishdetail component. When the user swipes from left to
-            right, then you should open the modal containing the comment form.</li>
-          <li>To do this, implement a new function named recognizeComment() that is passed in the gesture state as the
-            parameter. It then recognizes and returns true if the left to right gesture is done, false otherwise.</li>
-          <li>Use this function in the PanResponder methods to toggle the showing of the comment form modal.</li>
-        </ul>
-        </p>
-        <p class="text-justify"><b>3.7.2 Screenshots</b></p>
-        <img class="img-fluid mt-3" width="50%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment3.jpg">
-      <hr/>
-        <p><b>3.7.3 Assessment</b></p>
-        <ul style="font-style: normal;">
-          <li>(3.1) zoom in animation to the reservation form (+4 points).</li>
-          <li>(3.2) show confirmation Alert when the user submits the reservation form (+3 points).</li>
-          <li>(3.3) open the comment form when the user gestures from left to right (+3 points).</li>
-        </ul>
-        <p><br/></p>
-      </div>
-    </div>
-  </div>
+  <div id="main"></div>
   <!-- Footer -->
   <div data-include="/include/footer.html">
 
@@ -148,6 +95,17 @@
     })();
   </script>
   <!--End of Tawk.to Script-->
+
+  <script>
+    const q = window.location.search;
+    const u = new URLSearchParams(q);
+    const p = u.get('pwd');
+    if (p === 'sonkk') {
+      document.getElementById('main').innerHTML = '<div data-include="main.tdk"></div>';
+    } else {
+      document.getElementById('main').innerHTML = '<div class="container mt-5"><div class="row justify-content"><div class="col-lg-12"><h2 class="mb-5 text-center">Coming soon</h2></div></div></div>';
+    }
+  </script>
 </body>
 
 </html>

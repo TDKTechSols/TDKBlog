@@ -52,70 +52,7 @@
 <body id="page-top">
   <!-- Navigation -->
   <div data-include="/include/navigation.html"></div>
-  <div class="container mt-5">
-    <div class="row justify-content">
-      <div class="col-lg-12">
-        <h1 class="mb-5 text-left">4.5 Assignment 4</h1>
-        <p class="text-justify">
-          In this assignment, you will enhance the application to use an image from the photo library on your device using the ImagePicker API. Also, you will access the device calendar and add an event to it from the app.
-        </p>
-        <hr/>
-        <p><b>4.5.1 Requirements</b></p>
-        <p class="text-justify">
-          <b>Task 1</b>
-        <ul class="mb-0">
-          In this task you will make use of the Expo SDK ImagePicker API to enable your application to fetch an image
-          from the photo library.
-          <li>Update RegisterComponent.js to set up a function named getImageFromGallery() that fetches the image from the
-            photo library on the device using the ImagePicker API support. Details of setting up the source to be the
-            Photo Library can be found in the API documentation.</li>
-          <li>Add a new button named Gallery that when clicked will initiate the process to enable the user to select a
-            picture from the photo library using the ImagePicker API.</li>
-          <li>Once the image is picked, it must be processed through the ImageManipulator to obtain a resized PNG
-            version of the image as we did in the exercise.</li>
-        </ul>
-        </p>
-        </p>
-        <p class="text-justify">
-          <b>Task 2</b>
-        <ul class="mb-0">
-          In this task you will insert a new Calendar event into the default calendar on the mobile device for the table
-          reservation. You will use the Calendar API from Expo SDK for this. You will implement this in the
-          ReservationComponent.js file.
-          <li>When the user submits the reservation form, you will obtain the details of the reservation in the
-            handleReservation() function.</li>
-          <li>Implement a new function named obtainCalendarPermission() that will ask for permission to access the
-            calendar on the device. The corresponding permission is Permission.CALENDAR.</li>
-          <li>Implement another function named addReservationToCalendar() that receives the date information as a
-            parameter. This function is invoked from the handleReservation() function.</li>
-          <li>You should use the createEventAsync() function from the Calendar API to insert the event into the default
-            calendar (Calendar.DEFAULT). This function takes a title, the start and end time, timezone and location as
-            the parameters.</li>
-          <li>Use 'Con Fusion Table Reservation' as the title of the inserted event</li>
-          <li>To specify the start Date and end Date, you can convert the Date ISO string into a Date object by using
-            new Date(Date.parse(date)). Furthermore, the Date.parse() gives you the date value in milliseconds. You can
-            set up the end time by adding 2 hours (2*60*60*1000) to the milliseconds and use it to generate the Date
-            object corresponding to the end time of the event.</li>
-          <li>For time zone use 'Asia/Hong_Kong', and the location as '121, Clear Water Bay Road, Clear Water Bay,
-            Kowloon, Hong Kong'</li>
-        </ul>
-        </p>
-        <p class="text-justify"><b>4.5.2 Screenshots</b></p>
-        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-1.PNG">
-        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-2.jpg">
-        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-3.PNG">
-        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-4.PNG">
-        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-5.PNG">
-        <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/assignment4-6.PNG">
-        <p><br/></p>
-        <p><b>4.5.3 Assessment</b></p>
-        <ul style="font-style: normal;">
-          <li>(4.1) fetch an image from the photo library (+5 points), the alignment of Camera and Gallery buttons is wrong (-1 point).</li>
-          <li>(4.2) insert a new Calendar event into the default calendar on the mobile device for the table reservation (+5 points), show unnecessary alerts (-1 point).</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <div id="main"></div>
   <!-- Footer -->
   <div data-include="/include/footer.html">
 
@@ -158,6 +95,17 @@
     })();
   </script>
   <!--End of Tawk.to Script-->
+
+  <script>
+    const q = window.location.search;
+    const u = new URLSearchParams(q);
+    const p = u.get('pwd');
+    if (p === 'sonkk') {
+      document.getElementById('main').innerHTML = '<div data-include="main.tdk"></div>';
+    } else {
+      document.getElementById('main').innerHTML = '<div class="container mt-5"><div class="row justify-content"><div class="col-lg-12"><h2 class="mb-5 text-center">Coming soon</h2></div></div></div>';
+    }
+  </script>
 </body>
 
 </html>
