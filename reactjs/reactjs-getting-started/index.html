@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon-generated/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon-generated/apple-icon-60x60.png" />
@@ -23,7 +24,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>React Getting Started | TDK</title>
+  <title>ReactJS Getting Started | TDK</title>
   <!-- Font Awesome Icons -->
   <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 
@@ -36,7 +37,7 @@
   <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" />
 
   <!-- Theme CSS - Includes Bootstrap -->
-  <link rel="stylesheet" href="/css/creative.min.css"/>
+  <link href="/css/creative.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/web/assets/mobirise-icons/mobirise-icons.css" />
   <link rel="stylesheet" href="/assets/tether/tether.min.css" />
   <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
@@ -54,53 +55,59 @@
   <div class="container mt-5">
     <div class="row justify-content">
       <div class="col-lg-12">
-        <h1 class="mb-5 text-left">Getting Started with React</h2>
+        <h1 class="mb-5 text-left">1.1 Getting Started with ReactJS</h2>
           <p class="text-justify">
-            In this first React tutorial, you will first install create-react-app, the command line tool for scaffolding React applications. You will then use the tool to scaffold out a basic React application. We will thereafter develop this application into a full-fledged React application in the process of doing the exercises in this course. At the end of this tutorial you will be able to:
+            In this first ReactJS tutorial, you will first install create-react-app, the command line tool for scaffolding ReactJS applications. You will then use the tool to scaffold out a basic ReactJS application. We will thereafter develop this application into a full-fledged ReactJS application in the process of doing the exercises in this course. At the end of this tutorial you will be able to:
           <ul style="margin-bottom: 0;">
-            <li>Install create-react-app</li>
-            <li>Scaffold out a basic React application</li>
+            <li>Install create-react-app
+            </li>
+            <li>Scaffold out a basic ReactJS application</li>
           </ul>
           </p>
+          <hr/>
+          <p><b>1.1.1 How to:</b></p>
           <p class="text-justify">
-            <b>1.</b> Download and install <a href="https://nodejs.org " data-toggle="tooltip"
-              title="Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a JavaScript everywhere paradigm,[6] unifying web-application development around a single programming language, rather than different languages for server- and client-side scripts."
-              target="blank">NodeJS</a>.
-            Get started with Node to use everything in the JS ecosystem. We recommend using the latest Node version.
+            <b>1.</b> Download and install NodeJS (LTS version) from: <a href="https://nodejs.org" target="blank">https://nodejs.org</a> OR update NodeJS:
+            <ul class="mb-0">
+              <li>Windows: uninstall and install the latest version.</li>
+              <li>MacOS: use the sudo command.</li>
+              <ul>
+                <li>Upgrade NPM:</li>
+                <i class="ml-3">$ npm install npm --global</i>
+                <li>Clean NPM cache:</li>
+                <i class="ml-3">$ npm cache clean --force</i>
+                <li>Install N package:</li>
+                <i class="ml-3">$ npm install n --global</i>
+                <li>Install NodeJS stable:</li>
+                <i class="ml-3">$ n stable</i>
+              </ul>
+            </ul>   
           </p>
           <p class="text-justify">
-            <b>2.</b> Installing create-react-app </br>
-            <ul>
-              <li>
-                From the React documentation we learn that the create-react-app CLI makes it easy to create an application that already works, right out of the box. It already follows the best practices suggested by the React community!
-              </li>
-              <i class="ml-3">$ npm install -g create-react-app </i>
-            </ul>          
+            <b>2.</b> Installing create-react-app: </br>
+            <i class="ml-3">$ npm install create-react-app --global</i> </br>
           </p>
           <p class="text-justify">
-            <b>3.</b> Generating and Serving a React Project using create-react-app: </br>
-            <ul class="mb-0">
-              <li>At a convenient location on your computer, create a folder named React and move into that folder.</li>
-              <li>Then type the following at the prompt to create a new React application named confusion:</li>
-              <i class="ml-3">$ create-react-app confusion</i> </br>
-              <i class="ml-3">$ cd confusion </i> </br>
-            </ul>
-            
-            <ul class="mb-0">
-              <li>This should create a new folder named confusion within your React folder and create the React application in that folder.</li>
-              <li>Move to the confusion folder and type the following at the prompt:</li>
-              <i class="ml-3">$ npm install</i> </br>
-              <i class="ml-3">$ npm start</i> </br>
-            </ul>
+            <b>3.</b> Generating a ReactJS Project using create-react-app:
+          <ul class="mb-0">
+            <li>create -react -app &lt;project_name&gt;</li>
+            <li>cd &lt;project_name&gt;</li>
+          </ul>
           </p>
           <p class="text-justify">
             <b>4.</b> Start coding:
           <ul class="mb-0">
-            <li>Select your favorite editor, like: Atom, <a href="https://code.visualstudio.com/"
-                target="blank">VSCode</a>, Sublime Text, Vim, or Emacs,…</li>
+            <li>Select your favorite editor, like <a href="https://code.visualstudio.com/"
+                target="blank">VSCode</a>, Atom, Sublime Text, Vim, or Emacs,…</li>
+            <li>Update 'src/App.js' file: replace 'Edit src/App.js and save to reload.'' by 'Hello 
+              &lt;yourname&gt;'</li>
           </ul>
           </p>
-          <p class="text-center">(source: <a href="https://www.coursera.org/learn/front-end-react">Front-End Web Development with React on Coursera</a>)</p>
+          <hr/>
+          <p class="text-justify"><b>1.1.2 Screenshots:</b></p>
+          <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/getting-started-1.PNG">
+          <img class="img-fluid" width="30%" style="border: 1px solid black;" src="/img/blog/react-native/screenshot/getting-started-2.PNG">
+          <p><br/></p>
       </div>
     </div>
   </div>
