@@ -55,12 +55,12 @@
   <div class="container mt-5">
     <div class="row justify-content">
       <div class="col-lg-12">
-        <h1 class="mb-5 text-left">5.1 Google Firebase</h2>
+        <h1 class="mb-5 text-left">5.2 Google Firebase</h2>
           <p class="text-justify">
             In this tutorial, you will use the firebase library to read/write/listen data from Google Firebase.
           </p>
           <hr/>
-          <p><b>5.1.1 How to</b></p>
+          <p><b>5.2.1 How to</b></p>
           <p class="text-justify">
             <b>1.</b> Install firebase (tested on v9.6.5).
           <ul class="mb-0">
@@ -72,26 +72,37 @@
             <script src="https://gist.github.com/TDKTechSols/1720cc7ed95b965788ff7d7f22c5825e.js"></script>
           </p>
           <p class="text-justify">
-            <b>3.</b> Update 'components/RegisterComponent.js' file.
+            <b>3.</b> Write data: <br/>
+            -Update 'components/RegisterComponent.js' file.
             <script src="https://gist.github.com/TDKTechSols/7968af7caa90f65d4026b47cdeb71d9f.js"></script>
           </p>
           <p class="text-justify">
-            <b>4.</b> Update 'components/LoginComponent.js' file.
-            <script src="https://gist.github.com/TDKTechSols/7d7a275df97d67dd22dd720085b305e1.js"></script>
+            <b>4.</b> Read data once:
+            <ul>
+              <li>Update 'redux/ActionTypes.js' file (action).</li>
+              <script src="https://gist.github.com/TDKTechSols/df5fe21a7f2b31a810325a065d3e632a.js"></script>
+              <li>Update 'redux/ActionCreators.js' file (action).</li>
+              <script src="https://gist.github.com/TDKTechSols/29e0ca99be2a252a996198802f481e77.js"></script>
+              <li>Create 'redux/users.js' file (reducer).</li>
+              <script src="https://gist.github.com/TDKTechSols/1af35165554e06882c24114c13516879.js"></script>
+              <li>Update 'redux/ConfigureStore.js' file (store).</li>
+              <script src="https://gist.github.com/TDKTechSols/65dc9a286f5e862101107442c6676643.js"></script>
+              <li>Update 'components/LoginComponent.js' file.</li>
+              <script src="https://gist.github.com/TDKTechSols/7d7a275df97d67dd22dd720085b305e1.js"></script>
+              <li>Update 'components/MainComponent.js' file.</li>
+              <script src="https://gist.github.com/TDKTechSols/fc5f15df50c10846277dfb2a486646cd.js"></script>
+            </ul>     
           </p>
           <p class="text-justify">
-            <b>5.</b> Update 'components/ReservationComponent.js' file.
-            <script src="https://gist.github.com/TDKTechSols/387ec61e894d977b29a6f8db38899622.js"></script>
+            <b>5.</b> Listen for value events: <br/>
+            <ul>
+              <li>-Create 'contact' child-node from Firebase:</li>
+              <script src="https://gist.github.com/TDKTechSols/13ec1b4963ac0d22514c0b45b93f5e66.js"></script>
+              <li>-Update 'components/ContactComponent.js' file.</li>
+              <script src="https://gist.github.com/TDKTechSols/8473053937e8a55b70b9e1d6994f42a7.js"></script>
+            </ul>               
           </p>
-          <p class="text-justify">
-            <b>6.</b> Create 'contact' child-node from Firebase:
-            <script src="https://gist.github.com/TDKTechSols/13ec1b4963ac0d22514c0b45b93f5e66.js"></script>
-          </p>
-          <p class="text-justify">
-            <b>7.</b> Update 'components/ContactComponent.js' file.
-            <script src="https://gist.github.com/TDKTechSols/8473053937e8a55b70b9e1d6994f42a7.js"></script>
-          </p>
-          <p class="text-justify"><b>5.1.2 Screenshots</b></p>
+          <p class="text-justify"><b>5.2.2 Screenshots</b></p>
           <img class="img-fluid" width="30%" style="border: 1px solid black;"
             src="/img/blog/react-native/screenshot/firebase-1.PNG">
           <img class="img-fluid" width="30%" style="border: 1px solid black;"
